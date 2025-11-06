@@ -659,9 +659,9 @@ crisisBtn.addEventListener("click", () => {
     console.log("🎧 Heard:", transcript);
 
     // Detect wake word "help"
-    if (!inCrisisConversation && transcript.includes("Vikas")) {
+    if (!inCrisisConversation && transcript.includes("buddy")) {
       inCrisisConversation = true;
-      appendMessage("user", "Vikas!!");
+      appendMessage("user", "buddy!!");
 
       // 🎵 Play sound instead of speech
       playAlertSound();
